@@ -3,563 +3,334 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youssef Tantawi</title>
+    <title>Youssef Tantawi | Application Developer</title>
+    <meta name="description" content="Portfolio of Youssef Mohammed Ahmed Tantawi, an application developer focused on Flutter, UI/UX, Firebase, and mobile experiences.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="/assets/css/style.css" >
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="progress-bar"></div>
-    <div class="bg-animation">
-        <div class="floating-shapes">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
+    <div class="progress-bar" aria-hidden="true"></div>
+    <div class="page-glow" aria-hidden="true"></div>
 
-    <!-- Navigation -->
-    <header>
+    <header class="site-header">
         <div class="container">
-            <nav>
-                <div class="nav-right">
-                    <ul class="nav-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#certifications">Certifications</a></li>
-                        <li><a href="#education">Education</a></li>
-                    </ul>
-                    <button class="theme-toggle" id="themeToggle">
+            <nav class="navbar" aria-label="Primary navigation">
+                <a class="brand" href="#home" aria-label="Youssef Tantawi home">
+                    <span class="brand-mark">YT</span>
+                    <span>Youssef Tantawi</span>
+                </a>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#leadership">Leadership</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <button class="icon-button" id="themeToggle" type="button" aria-label="Switch color theme" title="Switch theme">
                         <i class="fas fa-moon"></i>
                     </button>
-                    <div class="menu-toggle">
+                    <button class="icon-button menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks" title="Menu">
                         <i class="fas fa-bars"></i>
-                    </div>
+                    </button>
                 </div>
             </nav>
         </div>
     </header>
 
-    <!-- Hero -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Hi, I'm <span class="highlight">Youssef Tantawi</span></h1>
-                <h2>Application Developer</h2>
-                <p>I build beautiful, user-centric mobile applications using Dart, Flutter, and cloud technologies like Firebase and Supabase. Passionate about clean architecture, seamless API integrations, and crafting exceptional user experiences through thoughtful UI/UX design.</p>
-                <div class="hero-btns">
-                    <a href="#projects" class="btn">View My Work</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+                <div class="hero-copy reveal">
+                    <p class="eyebrow">
+                        <i class="fas fa-location-dot" aria-hidden="true"></i>
+                        Minya, Minya Governorate, Egypt
+                    </p>
+                    <h1>Youssef Mohammed Ahmed Tantawi</h1>
+                    <h2>Application Developer</h2>
+                    <p class="hero-text">Aspiring Flutter developer with a strong Information Technology foundation and UI/UX design mindset. I build user-centric mobile applications with Dart, Flutter, Firebase, and practical product thinking.</p>
 
-    <!-- About Me -->
-    <section id="about">
-        <div class="container">
-            <div class="section-title">
-                <h2>About Me</h2>
-            </div>
-            <div class="about-content">
-                <div class="about-img">
-                    <img src="../../assets/images/team/Tantawi.jpg" alt="Youssef Tantawi">
-                </div>
-                <div class="about-text">
-                    <h3>Full Stack .NET Developer</h3>
-                    <p>I am Youssef Tantawi, an aspiring Flutter Developer and UI/UX Designer passionate about building beautiful, user-centric mobile applications using Dart, Flutter, Clouds (Firebase, Supabase) and APIs integration. With a strong foundation in Information Technology, I am eager to keep learning and applying my skills in real-world projects.</p>
-                    <p>What makes clients and teams prefer working with me is that I put my full effort and passion into every project. I combine my technical skills with my creative problem-solving abilities to craft mobile applications that not only function seamlessly but also deliver exceptional user experiences that stand out in the market.</p>
-                    <p>I stay updated with the latest Flutter trends and best practices, constantly improving my skills to deliver cutting-edge mobile solutions. As a natural leader with proven teamwork and communication skills, I thrive in collaborative environments and am always ready to contribute to innovative projects and team success. My strong eye for UI/UX design ensures that every application I build is both visually appealing and intuitive to use.</p>
-                    <div class="skills-list">
-                        <span>ASP.NET Core</span>
-                        <span>C# Programming</span>
-                        <span>SQL Server</span>
-                        <span>JavaScript</span>
-                        <span>UI/UX Design</span>
-                        <span>Figma</span>
-                     
+                    <div class="hero-actions">
+                        <a class="btn primary-btn" href="#project">
+                            <i class="fas fa-layer-group" aria-hidden="true"></i>
+                            View Project
+                        </a>
+                        <a class="btn ghost-btn" href="#contact">
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                            Contact Me
+                        </a>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Stats -->
-    <section class="stats">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <span class="stat-number" data-count="5">0</span>
-                    <span class="stat-text">Projects Completed</span>
+                    <div class="hero-highlights" aria-label="Portfolio highlights">
+                        <span><strong>Flutter</strong> mobile apps</span>
+                        <span><strong>Firebase</strong> integration</span>
+                        <span><strong>UI/UX</strong> design</span>
+                    </div>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-count="7">0</span>
-                    <span class="stat-text">Happy Clients</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-count="4">0</span>
-                    <span class="stat-text">Certifications</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-count="1">0</span>
-                    <span class="stat-text">Years Experience</span>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Skills -->
-    <section class="skills" id="skills">
-        <div class="container">
-            <div class="section-title">
-                <h2>Skills</h2>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>.NET & Backend</h3>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>ASP.NET Core</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-level="85"></div>
-                        </div>
+                <div class="hero-media reveal">
+                    <div class="portrait-shell">
+                        <img src="assets/images/team/Tantawi%20Cropped.jpg" alt="Youssef Tantawi portrait">
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>C# Programming</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-level="90"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Entity Framework</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-level="80"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>LINQ</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-level="85"></div>
-                        </div>
+                    <div class="floating-badge">
+                        <i class="fas fa-code" aria-hidden="true"></i>
+                        <span>Dart, Flutter, GetX</span>
                     </div>
                 </div>
-                
-                <div class="skill-category">
-                    <h3>Frontend & UI/UX</h3>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>JavaScript</span>
-                            <span>80%</span>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">About</p>
+                    <h2>Curious builder with a product eye</h2>
+                </div>
+
+                <div class="about-layout">
+                    <article class="soft-panel reveal">
+                        <p>I am an aspiring Flutter Developer and UI/UX Designer with proven teamwork and communication skills. I enjoy turning clear product ideas into friendly mobile experiences, and I am eager to apply my skills in entry-level or internship opportunities.</p>
+                        <p>My current focus is cross-platform mobile development, clean interface design, API usage, Firebase integration, and writing reliable app features that are easy for people to use.</p>
+                    </article>
+
+                    <aside class="profile-facts reveal" aria-label="Profile details">
+                        <div>
+                            <span>Current path</span>
+                            <strong>Information Technology student</strong>
                         </div>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-level="80"></div>
+                        <div>
+                            <span>Availability</span>
+                            <strong>Entry-level and internship roles</strong>
+                        </div>
+                        <div>
+                            <span>Languages</span>
+                            <strong>Arabic native, English C1 advanced</strong>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="tinted-section" id="project">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Featured Project</p>
+                    <h2>Cairo Metro Application</h2>
+                </div>
+
+                <article class="project-card reveal">
+                    <div class="project-visual" aria-hidden="true">
+                        <div class="metro-map">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <i class="fas fa-train-subway"></i>
                         </div>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
+
+                    <div class="project-content">
+                        <p class="project-source">Digital Egypt Pioneers Initiative (DEPI)</p>
+                        <h3>Mobile navigation for Cairo Metro commuters</h3>
+                        <p>A user-friendly mobile application that simplifies navigation of the Cairo Metro system. The project focuses on clear routes, useful location behavior, and a smooth mobile experience for daily commuters.</p>
+                        <div class="tag-list" aria-label="Project technologies">
+                            <span>Dart</span>
+                            <span>Flutter</span>
+                            <span>GetX</span>
+                            <span>Geolocator</span>
+                            <span>Geocoding</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Education</p>
+                    <h2>Learning path</h2>
+                </div>
+
+                <div class="timeline">
+                    <article class="timeline-item reveal">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-card">
+                            <p class="date">2023 - 2027 Expected</p>
+                            <h3>Bachelor of Information Technology</h3>
+                            <p class="meta">Minia University</p>
+                            <p>Grade: Excellent. GPA: 3.56.</p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-card">
+                            <p class="date">28 Jun - Present</p>
+                            <h3>Software Development - Cross Platform Mobile</h3>
+                            <p class="meta">Digital Egypt Pioneers Initiative (DEPI)</p>
+                            <ul>
+                                <li>Completed intensive modules in Dart, advanced Flutter topics, and Firebase integration.</li>
+                                <li>Practiced UI/UX design, Android and iOS deployment, functional documentation, and unit testing.</li>
+                                <li>Built professional competencies in freelancing skills, presentation, and teamwork.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="tinted-section" id="leadership">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Volunteer</p>
+                    <h2>Leadership experience</h2>
+                </div>
+
+                <div class="cards-grid">
+                    <article class="info-card reveal">
+                        <div class="card-icon">
+                            <i class="fas fa-user-group" aria-hidden="true"></i>
+                        </div>
+                        <p class="date">2023 - Present</p>
+                        <h3>Cohort Leader</h3>
+                        <p class="meta">Faculty of Science, IT Department, Minia University</p>
+                        <p>Act as the primary representative for the student cohort, supporting communication between students and faculty to address academic and administrative matters.</p>
+                    </article>
+
+                    <article class="info-card reveal">
+                        <div class="card-icon">
+                            <i class="fas fa-people-arrows" aria-hidden="true"></i>
+                        </div>
+                        <p class="date">28 Jun - Present</p>
+                        <h3>Group Leader</h3>
+                        <p class="meta">Digital Egypt Pioneers Initiative (DEPI)</p>
+                        <p>Selected to lead a diverse group of 40 peers, coordinate project timelines, delegate tasks, and support a collaborative team environment.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Skills</p>
+                    <h2>Technical and soft skills</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-panel reveal">
+                        <h3>Languages</h3>
+                        <div class="tag-list">
+                            <span>Dart</span>
+                            <span>C#</span>
+                            <span>Java</span>
+                            <span>C++</span>
+                            <span>Python</span>
+                            <span>SQL</span>
                             <span>HTML/CSS</span>
-                            <span>90%</span>
+                            <span>JavaScript</span>
                         </div>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-level="90"></div>
+                    </article>
+
+                    <article class="skill-panel reveal">
+                        <h3>Mobile & Packages</h3>
+                        <div class="tag-list">
+                            <span>Flutter</span>
+                            <span>Windows Forms</span>
+                            <span>GetX</span>
+                            <span>Geolocator</span>
+                            <span>Geocoding</span>
+                            <span>Dio</span>
                         </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>UI/UX Design</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-level="85"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Figma/Adobe XD</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-level="80"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Databases & Tools</h3>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>SQL Server</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-level="85"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>MySQL/Oracle</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-level="75"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
+                    </article>
+
+                    <article class="skill-panel reveal">
+                        <h3>Data & Tools</h3>
+                        <div class="tag-list">
+                            <span>Firebase</span>
+                            <span>SQLite</span>
+                            <span>MySQL</span>
                             <span>Git & GitHub</span>
-                            <span>80%</span>
+                            <span>Unit Testing</span>
+                            <span>OOP</span>
+                            <span>Data Structures</span>
                         </div>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-level="80"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>RESTful APIs</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-level="85"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                    </article>
 
-    <!-- Services -->
-    <section id="services">
-        <div class="container">
-            <div class="section-title">
-                <h2>Services</h2>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>Web Development</h3>
-                    <p>Building robust, scalable web applications using ASP.NET Core MVC and modern frontend technologies.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3>Database Design</h3>
-                    <p>Designing efficient database structures and writing optimized SQL queries for maximum performance.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-palette"></i>
-                    </div>
-                    <h3>UI/UX Design</h3>
-                    <p>Creating intuitive, user-friendly interfaces with modern design principles and prototyping tools.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <h3>Full Stack Solutions</h3>
-                    <p>End-to-end development from database design to frontend implementation and deployment.</p>
+                    <article class="skill-panel reveal">
+                        <h3>Professional Skills</h3>
+                        <div class="tag-list">
+                            <span>Leadership</span>
+                            <span>Teamwork</span>
+                            <span>Communication</span>
+                            <span>Emotional intelligence</span>
+                            <span>Presentation</span>
+                            <span>Creativity</span>
+                            <span>Problem-solving</span>
+                            <span>Critical thinking</span>
+                            <span>Self-motivation</span>
+                            <span>Adaptability</span>
+                            <span>Resilience under pressure</span>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects -->
-    <section id="projects">
-        <div class="container">
-            <div class="section-title">
-                <h2>Projects</h2>
-            </div>
-            <div class="projects-grid">
-                <!-- مشروع BookifyHotel -->
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://im ages.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="BookifyHotel" class="project-image">
-                    </div>
-                    <div class="project-overlay">
-                        <a href="#" class="view-project">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <a href="#" class="view-large">
-                            <i class="fas fa-search-plus"></i>
-                        </a>
-                    </div>
-                    <div class="project-info">
-                        <h3>BookifyHotel - Hotel Management System</h3>
-                        <p>A comprehensive hotel booking and management system built with ASP.NET Core MVC, Entity Framework, and SQL Server. Includes features for room booking, customer management, billing, and admin dashboard.</p>
-                        <div class="project-tags">
-                            <span class="tag">ASP.NET Core</span>
-                            <span class="tag">MVC</span>
-                            <span class="tag">Entity Framework</span>
-                            <span class="tag">SQL Server</span>
-                            <span class="tag">JavaScript</span>
-                        </div>
-                    </div>
+        <section class="contact-section" id="contact">
+            <div class="container contact-layout">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Contact</p>
+                    <h2>Let's build something useful</h2>
+                    <p>I am open to internship, entry-level, and collaborative mobile development opportunities.</p>
                 </div>
-                
-                <!-- مشروع E-Commerce -->
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="E-Commerce Platform" class="project-image">
-                    </div>
-                    <div class="project-overlay">
-                        <a href="#" class="view-project">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <a href="#" class="view-large">
-                            <i class="fas fa-search-plus"></i>
-                        </a>
-                    </div>
-                    <div class="project-info">
-                        <h3>TechStore - E-Commerce Platform</h3>
-                        <p>Full-featured e-commerce platform with user authentication, product catalog, shopping cart, payment integration, and order management system.</p>
-                        <div class="project-tags">
-                            <span class="tag">ASP.NET Core</span>
-                            <span class="tag">MVC</span>
-                            <span class="tag">SQL Server</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Stripe API</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- مشروع HTML/CSS/JavaScript -->
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Portfolio Website" class="project-image">
-                    </div>
-                    <div class="project-overlay">
-                        <a href="#" class="view-project">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <a href="#" class="view-large">
-                            <i class="fas fa-search-plus"></i>
-                        </a>
-                    </div>
-                    <div class="project-info">
-                        <h3>Creative Portfolio Website</h3>
-                        <p>A fully responsive portfolio website with modern design, animations, and interactive elements built with pure HTML, CSS, and JavaScript.</p>
-                        <div class="project-tags">
-                            <span class="tag">HTML5</span>
-                            <span class="tag">CSS3</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Responsive Design</span>
-                            <span class="tag">UI/UX</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- مشروع Task Manager -->
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Task Manager" class="project-image">
-                    </div>
-                    <div class="project-overlay">
-                        <a href="#" class="view-project">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <a href="#" class="view-large">
-                            <i class="fas fa-search-plus"></i>
-                        </a>
-                    </div>
-                    <div class="project-info">
-                        <h3>TaskFlow - Task Management App</h3>
-                        <p>A collaborative task management application with drag-and-drop functionality, team collaboration features, and real-time updates.</p>
-                        <div class="project-tags">
-                            <span class="tag">HTML/CSS</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Local Storage</span>
-                            <span class="tag">Drag & Drop</span>
-                            <span class="tag">UI Design</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- مشروع Weather App -->
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Weather App" class="project-image">
-                    </div>
-                    <div class="project-overlay">
-                        <a href="#" class="view-project">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <a href="#" class="view-large">
-                            <i class="fas fa-search-plus"></i>
-                        </a>
-                    </div>
-                    <div class="project-info">
-                        <h3>WeatherWise - Weather Application</h3>
-                        <p>A weather forecasting application with location detection, 5-day forecast, and interactive weather maps using external weather API.</p>
-                        <div class="project-tags">
-                            <span class="tag">HTML/CSS</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">API Integration</span>
-                            <span class="tag">Responsive</span>
-                            <span class="tag">GeoLocation</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- مشروع Restaurant Website -->
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Restaurant Website" class="project-image">
-                    </div>
-                    <div class="project-overlay">
-                        <a href="#" class="view-project">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <a href="#" class="view-large">
-                            <i class="fas fa-search-plus"></i>
-                        </a>
-                    </div>
-                    <div class="project-info">
-                        <h3>Foodie - Restaurant Website</h3>
-                        <p>A fully responsive restaurant website with online menu, reservation system, and food ordering functionality.</p>
-                        <div class="project-tags">
-                            <span class="tag">HTML5</span>
-                            <span class="tag">CSS3</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Bootstrap</span>
-                            <span class="tag">UI/UX Design</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Certifications -->
-    <section class="certifications" id="certifications">
-        <div class="container">
-            <div class="section-title">
-                <h2>Certifications</h2>
+                <div class="contact-links reveal" aria-label="Contact links">
+                    <a href="mailto:yousseftantawi16@gmail.com">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <span>yousseftantawi16@gmail.com</span>
+                    </a>
+                    <a href="tel:+201155194769">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <span>+20 115 519 4769</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/youssef-tantawi/" target="_blank" rel="noreferrer">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        <span>Youssef Tantawi</span>
+                    </a>
+                    <a href="https://github.com/YoussefTantawi" target="_blank" rel="noreferrer">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                        <span>YoussefTantawi</span>
+                    </a>
+                </div>
             </div>
-            <div class="certs-grid">
-                <div class="cert-card">
-                    <div class="cert-img">
-                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="DEPI Certification">
-                    </div>
-                    <div class="cert-info">
-                        <h3>DEPI Program – Full Stack .NET Track</h3>
-                        <p>Ministry of Communications - 2023-2024</p>
-                        <p>Comprehensive training in C#, ASP.NET Core, SQL Server, and web development.</p>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-img">
-                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="JavaScript Certification">
-                    </div>
-                    <div class="cert-info">
-                        <h3>JavaScript Algorithms & Data Structures</h3>
-                        <p>freeCodeCamp - 2023</p>
-                        <p>Mastered JavaScript fundamentals, algorithms, data structures, and functional programming.</p>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-img">
-                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="SQL Certification">
-                    </div>
-                    <div class="cert-info">
-                        <h3>SQL & Databases Certification</h3>
-                        <p>Coursera - 2022</p>
-                        <p>Comprehensive training in database design, SQL queries, and database management systems.</p>
-                    </div>
-                </div>
-             
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Education-Experience -->
-    <section class="education-experience" id="education">
-        <div class="container">
-            <div class="section-title">
-                <h2>Education & Experience</h2>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Bachelor of Information Technology</h3>
-                        <span class="date">Minya University | 2023 – 2027 (Expected)</span>
-                        <p>Currently pursuing degree in Information Technology with focus on software development, databases, and web technologies.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>DEPI Program – Full Stack .NET Track</h3>
-                        <span class="date">Ministry of Communications | 2023 - 2024</span>
-                        <ul>
-                            <li>Programming in C# and ASP.NET Core MVC</li>
-                            <li>Developing Web Applications with HTML5, JavaScript & CSS3</li>
-                            <li>.NET Core Web API Development</li>
-                            <li>SQL Server Database Programming</li>
-                            <li>Functional Documentation & Unit Testing</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                
-                
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Freelance Developer </h3>
-                        <span class="date">Self-Employed | 2025 </span>
-                        <ul>
-                            <li>Developed 5+ web applications using ASP.NET Core and JavaScript</li>
-                            <li>Created 7+ responsive websites with HTML/CSS/JavaScript</li>
-                            <li>Designed user interfaces for mobile and web applications</li>
-                            <li>Provided database design and optimization services</li>
-                            <li>Collaborated with clients to deliver custom solutions</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>Contact Me!</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/youssef-tantawi/" target="_blank">
-                    <i class="fab fa-linkedin-in"></i>
+        <div class="container footer-content">
+            <p>&copy; <span id="year">2026</span> Youssef Tantawi</p>
+            <div class="social-links" aria-label="Social links">
+                <a href="https://www.linkedin.com/in/youssef-tantawi/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                 </a>
-                <a href="https://github.com/YoussefTantawi" target="_blank">
-                    <i class="fab fa-github"></i>
+                <a href="https://github.com/YoussefTantawi" target="_blank" rel="noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github" aria-hidden="true"></i>
                 </a>
-                <a href="mailto:yousseftantawi16@gmail.com">
-                    <i class="fas fa-envelope"></i>
+                <a href="mailto:yousseftantawi16@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
                 </a>
-                <a href="https://wa.me/201155194769" target="_blank">
-                    <i class="fab fa-whatsapp"></i>
+                <a href="https://wa.me/201155194769" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i>
                 </a>
             </div>
         </div>
     </footer>
 
-    <!-- Image Modal -->
-    <div id="imageModal" class="modal">
-        <span class="close-modal">&times;</span>
-        <img class="modal-content" id="modalImage">
-    </div>
-    <script src="../../assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
